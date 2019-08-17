@@ -1,0 +1,1 @@
+When it comes to sin, everyone falls into one of three camps, those claiming a certain act to be sin, those claiming the others' claim to be a sin, and those who are sufficiently distanced from the act to afford indifference.
