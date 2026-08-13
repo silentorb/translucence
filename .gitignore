@@ -1,0 +1,21 @@
+node_modules/
+**/dist/
+.DS_Store
+Thumbs.db
+.tome
+
+# Secrets / local env (keep examples tracked)
+.env
+.env.*
+!.env.example
+
+# Local editor state
+content/.obsidian/
+
+# SQLite cache (source of truth is content/)
+data/tome.sqlite
+data/*.sqlite-wal
+data/*.sqlite-shm
+packages/**/data/*.sqlite
+packages/**/data/*.sqlite-wal
+packages/**/data/*.sqlite-shm

@@ -1,0 +1,10 @@
+{
+  "name": "translucence",
+  "description": "Interconnected Bible articles and modular arguments about Biblical truths",
+  "private": true,
+  "packageManager": "bun@1.3.13",
+  "scripts": {
+    "content:sync": "bun -e \"import { openContentGraph, resolveContentPath, defaultDbPathForContent } from 'tome-db/content'; const c=resolveContentPath(); const ctx=openContentGraph(c, defaultDbPathForContent(c)); ctx.sync.fullRebuild(); ctx.cache.close(); console.log('Synced', c);\"",
+    "validate:workspace": "bun scripts/validate-workspace.ts"
+  }
+}

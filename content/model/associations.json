@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "associations": {
+    "01KZXT3MS0083H8RXPW78QZ0TN": {
+      "perspectives": [
+        {
+          "title": "Members"
+        },
+        {
+          "title": "Membership",
+          "linkAdd": "Link type table"
+        }
+      ],
+      "traits": [
+        "set"
+      ]
+    }
+  }
+}

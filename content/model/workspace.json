@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "homeNodeId": "01KZXT3MRP5GXYXCSRHKF302BG",
+  "archiveNodeId": "01KZXT3MS0JYENYDDZXWHGDAEJ",
+  "protectedNodeIds": [
+    "01KZXT3MRP5GXYXCSRHKF302BG",
+    "01KZXT3MS0JYENYDDZXWHGDAEJ"
+  ],
+  "graphExplorer": {
+    "defaultAnchorNodeId": "01KZXT3MRP5GXYXCSRHKF302BG"
+  },
+  "staticSite": {
+    "homeNodeId": "01KZXT3MRP5GXYXCSRHKF302BG"
+  },
+  "quickLinks": [],
+  "branding": {
+    "appTitle": "Translucence",
+    "staticSiteHeader": "Translucence",
+    "staticSiteFooterOrganization": "Silent Orb"
+  }
+}
