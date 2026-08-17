@@ -1,7 +1,7 @@
 ---
 title: God and the existence of Evil
 created_at: 2026-08-16T16:12:38.636Z
-modified_at: 2026-08-17T15:02:12.182Z
+modified_at: 2026-08-17T15:22:07.506Z
 ---
 If [[01M05NAGC9RYEXEN2A0SPTR1MW]] is [[01M05NANSCJE2KKVN9KTWPDQ0E]] and [[01M05NJKBX2D5RKPQ260MYME1Y]], then how can [[01M05NAX56RNNSCJ7FF4K68AN1]] exist?
 
@@ -32,4 +32,8 @@ If [[01M05NAGC9RYEXEN2A0SPTR1MW]] is [[01M05NANSCJE2KKVN9KTWPDQ0E]] and [[01M05N
 > Then came to him all his brothers and sisters and all who had known him before, and ate bread with him in his house. And they showed him sympathy and comforted him for all the evil that the Lord had brought upon him. And each of them gave him a piece of money and a ring of gold.
 >
 > Job 42:11
+
+# Accounting for good
+
+The question of this article is sometimes used as a case against either the existence of [[01M05NAGC9RYEXEN2A0SPTR1MW]] or that @
 
