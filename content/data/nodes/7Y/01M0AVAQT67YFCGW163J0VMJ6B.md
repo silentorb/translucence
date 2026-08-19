@@ -1,0 +1,6 @@
+---
+title: God is a black box
+created_at: 2026-08-18T16:30:03.078Z
+modified_at: 2026-08-19T15:05:07.867Z
+---
+[[01M05NAGC9RYEXEN2A0SPTR1MW]] is a [[01KZXWFJJ1NJDANEQ95X3R3ETR]].

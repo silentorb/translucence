@@ -1,7 +1,7 @@
 ---
 title: Black Box
 created_at: 2026-08-13T15:40:02.497Z
-modified_at: 2026-08-15T18:42:32.815Z
+modified_at: 2026-08-19T15:04:22.872Z
 url_alias: black-box
 ---
 A black box is anything that you know what it does, but you don't know how it does it. A child can happily turn on the TV and watch it without understanding the scientific principles employed to generate the images and audio.

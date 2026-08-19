@@ -4,6 +4,8 @@
 
 A core goal is to present **modular arguments about Biblical truths**: claims, supporting passages, and related articles that can be assembled, reused, and traced.
 
+The home page lists articles with a **query table** (all live nodes except home, archive, and set hubs/members). Articles are **not** members of home.
+
 ## Status
 
 Type tables, association types, and article/argument structure are **not defined yet**. This stub records intent so later modeling has a north star. Do not invent domain types or associations until that ontology work is explicit.
