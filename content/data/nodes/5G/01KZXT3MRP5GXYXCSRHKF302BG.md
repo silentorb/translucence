@@ -28,7 +28,7 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "position": { "x": 220, "y": 0 },
           "data": {
             "inputValues": {
-              "association": "01KZXT3MS0083H8RXPW78QZ0TN",
+              "association": "01KXBNPNJDENZ9BXN5BYZ7JKPT",
               "direction": 0
             }
           }
@@ -39,7 +39,7 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "position": { "x": 220, "y": 120 },
           "data": {
             "inputValues": {
-              "association": "01KZXT3MS0083H8RXPW78QZ0TN",
+              "association": "01KXBNPNJDENZ9BXN5BYZ7JKPT",
               "direction": 1
             }
           }

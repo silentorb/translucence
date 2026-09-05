@@ -8,6 +8,8 @@ The home page lists articles with a **query table** (all live nodes except home,
 
 ## Status
 
-Type tables, association types, and article/argument structure are **not defined yet**. This stub records intent so later modeling has a north star. Do not invent domain types or associations until that ontology work is explicit.
+Type tables and article/argument structure are **not defined yet**. This stub records intent so later modeling has a north star. Do not invent domain types or associations until that ontology work is explicit.
+
+Set membership uses the shared Marloth plain set association ULID `01KXBNPNJDENZ9BXN5BYZ7JKPT` (Members / Membership) so multi-corpus sessions treat membership as one association.
 
 When types exist, document them here (what a node means, how it relates, traceability rules) and keep `content/model/` in lock-step.
