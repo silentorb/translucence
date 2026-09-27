@@ -24,8 +24,10 @@ The git-tracked corpus in `./content/` is a property graph: node markdown and re
 | **Project feature** | A workspace capability documented in the sibling **`tome`** repo under `docs/features/` (e.g. tome-db, tome-editor). Use this phrase when discussing tooling or agent specs—not graph nodes. |
 | **Node** | Any entity in the design graph (SQLite `nodes` table). |
 | **Relationship** | A link between two nodes with a **relationship type** and properties. One JSON file per edge under `content/data/relationships/` (archive under `content/archive/relationships/`); SQLite cache expands to directed projections. |
+| **Relationship type** | Registry definition for a kind of relationship (ULID + perspectives + traits + optional endpoints). Canonical term in agent prose. On disk the legacy filename/key is still `associations.json` / `associations` — see tome `docs/features/tome-db.md`. |
+| **Association** | On-disk legacy naming only (`associations.json`, JSON key `associations`, content-model fields named `"association"`). Do not use for the concept in new prose. Also reserved for a possible future node-type pairing concept (not implemented). |
 | **Page** | UI representation of a node in the editor (`NodePageView`, page title, sections, `getNodePageDetail`). Not the same as a raw export file. |
-| **Schema** | Git-tracked relationship rules in `content/model/schema.json`. Not SQLite DDL. |
+| **Schema** | Git-tracked relationship rules in `content/model/schema.json`. Not SQLite DDL. Endpoint pairing for relationship types lives on `associations.json` `endpoints`. |
 | **Type table** | Any node used as an `IS_A` target and/or declared in `content/model/table-schemas.json`. |
 
 ## Graph data workflow
