@@ -11,12 +11,13 @@
   ],
   "components": [
     {
-      "id": "tome-query.block",
+      "id": "tome-query",
       "extensionId": "tome-query",
       "kind": "page-block",
       "implementationId": "tome-query",
       "label": "Query table",
       "enabled": true,
+      "roles": ["query"],
       "slashMenu": { "group": "custom", "order": 40 }
     }
   ]
