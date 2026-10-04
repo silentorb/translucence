@@ -7,6 +7,13 @@
       "editorModule": "tome-query/editor",
       "htmlModule": "tome-query/html",
       "serverModule": "tome-query/server"
+    },
+    {
+      "id": "tome-ontology-ui",
+      "enabled": true,
+      "editorModule": "tome-ontology-ui/editor",
+      "htmlModule": "tome-ontology-ui/html",
+      "serverModule": "tome-ontology-ui/server"
     }
   ],
   "components": [
@@ -19,6 +26,16 @@
       "enabled": true,
       "roles": ["query"],
       "slashMenu": { "group": "custom", "order": 40 }
+    },
+    {
+      "id": "tome-ontology-ui",
+      "extensionId": "tome-ontology-ui",
+      "kind": "page-block",
+      "implementationId": "tome-ontology-ui",
+      "label": "Node filter",
+      "enabled": true,
+      "roles": ["node-filter"],
+      "slashMenu": { "group": "custom", "order": 55 }
     }
   ]
 }
