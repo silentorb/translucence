@@ -2,7 +2,10 @@
   "version": 1,
   "associations": {
     "01KXBNPNJDENZ9BXN5BYZ7JKPT": {
-      "perspectives": [
+      "traits": [
+        "set"
+      ],
+      "roles": [
         {
           "title": "Members"
         },
@@ -11,8 +14,9 @@
           "linkAdd": "Link type table"
         }
       ],
-      "traits": [
-        "set"
+      "roleIds": [
+        "01M4PPCCVPN99HB182MNH7WKQ2",
+        "01M4PPCCVPEAZC1NT61K28X7PP"
       ]
     }
   }
