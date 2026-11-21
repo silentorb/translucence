@@ -6,395 +6,425 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
 ```json {type="query"}
 {
   "version": 1,
-  "reactFlow": {
-    "nodes": [
-      {
+  "graph": {
+    "nodes": {
+      "in": {
         "id": "in",
         "type": "input",
-        "position": {
-          "x": 0,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "corpus": {
         "id": "corpus",
         "type": "corpus",
-        "position": {
-          "x": 180,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {
-            "id": "page"
-          }
+        "inputs": {
+          "id": "page"
         }
       },
-      {
+      "hopMembers": {
         "id": "hopMembers",
         "type": "traverse",
-        "position": {
-          "x": 220,
-          "y": 0
-        },
-        "data": {
-          "inputValues": {
-            "association": "01KXBNPNJDENZ9BXN5BYZ7JKPT",
-            "direction": 0
-          }
+        "inputs": {
+          "association": "01KXBNPNJDENZ9BXN5BYZ7JKPT",
+          "direction": 0
         }
       },
-      {
+      "hopHubs": {
         "id": "hopHubs",
         "type": "traverse",
-        "position": {
-          "x": 220,
-          "y": 120
-        },
-        "data": {
-          "inputValues": {
-            "association": "01KXBNPNJDENZ9BXN5BYZ7JKPT",
-            "direction": 1
-          }
+        "inputs": {
+          "association": "01KXBNPNJDENZ9BXN5BYZ7JKPT",
+          "direction": 1
         }
       },
-      {
+      "exceptMembers": {
         "id": "exceptMembers",
         "type": "except",
-        "position": {
-          "x": 480,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "exceptHubs": {
         "id": "exceptHubs",
         "type": "except",
-        "position": {
-          "x": 700,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "colHome": {
         "id": "colHome",
         "type": "column",
-        "position": {
-          "x": 220,
-          "y": 280
-        },
-        "data": {
-          "inputValues": {
-            "name": "id"
-          }
+        "inputs": {
+          "name": "id"
         }
       },
-      {
+      "litHome": {
         "id": "litHome",
         "type": "literal",
-        "position": {
-          "x": 220,
-          "y": 360
-        },
-        "data": {
-          "inputValues": {
-            "value": "01KZXT3MRP5GXYXCSRHKF302BG"
-          }
+        "inputs": {
+          "value": "01KZXT3MRP5GXYXCSRHKF302BG"
         }
       },
-      {
+      "eqHome": {
         "id": "eqHome",
         "type": "equals",
-        "position": {
-          "x": 440,
-          "y": 320
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "filterHome": {
         "id": "filterHome",
         "type": "filter",
-        "position": {
-          "x": 660,
-          "y": 320
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "exceptHome": {
         "id": "exceptHome",
         "type": "except",
-        "position": {
-          "x": 920,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "colArchive": {
         "id": "colArchive",
         "type": "column",
-        "position": {
-          "x": 220,
-          "y": 440
-        },
-        "data": {
-          "inputValues": {
-            "name": "id"
-          }
+        "inputs": {
+          "name": "id"
         }
       },
-      {
+      "litArchive": {
         "id": "litArchive",
         "type": "literal",
-        "position": {
-          "x": 220,
-          "y": 520
-        },
-        "data": {
-          "inputValues": {
-            "value": "01KZXT3MS0JYENYDDZXWHGDAEJ"
-          }
+        "inputs": {
+          "value": "01KZXT3MS0JYENYDDZXWHGDAEJ"
         }
       },
-      {
+      "eqArchive": {
         "id": "eqArchive",
         "type": "equals",
-        "position": {
-          "x": 440,
-          "y": 480
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "filterArchive": {
         "id": "filterArchive",
         "type": "filter",
-        "position": {
-          "x": 660,
-          "y": 480
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "exceptArchive": {
         "id": "exceptArchive",
         "type": "except",
-        "position": {
-          "x": 1140,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {}
-        }
+        "inputs": {}
       },
-      {
+      "sort": {
         "id": "sort",
         "type": "sort",
-        "position": {
-          "x": 1360,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {
-            "column": "title",
-            "direction": "asc"
-          }
+        "inputs": {
+          "column": "title",
+          "direction": "asc"
         }
       },
-      {
+      "project": {
         "id": "project",
         "type": "project",
-        "position": {
-          "x": 1580,
-          "y": 200
-        },
-        "data": {
-          "inputValues": {
-            "columns": "id"
-          }
+        "inputs": {
+          "columns": "id"
         }
       },
-      {
+      "out": {
         "id": "out",
         "type": "output",
-        "position": {
-          "x": 1800,
-          "y": 200
+        "inputs": {}
+      }
+    },
+    "edges": {
+      "e_in_corpus": {
+        "from": {
+          "node": "in",
+          "port": "value"
         },
-        "data": {
-          "inputValues": {}
+        "to": {
+          "node": "corpus",
+          "port": "collection"
+        }
+      },
+      "e_in_hopMembers": {
+        "from": {
+          "node": "corpus",
+          "port": "collection"
+        },
+        "to": {
+          "node": "hopMembers",
+          "port": "collection"
+        }
+      },
+      "e_in_hopHubs": {
+        "from": {
+          "node": "corpus",
+          "port": "collection"
+        },
+        "to": {
+          "node": "hopHubs",
+          "port": "collection"
+        }
+      },
+      "e_in_exceptMembers": {
+        "from": {
+          "node": "corpus",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptMembers",
+          "port": "collection"
+        }
+      },
+      "e_excl_members": {
+        "from": {
+          "node": "hopMembers",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptMembers",
+          "port": "exclude"
+        }
+      },
+      "e_keep_exceptHubs": {
+        "from": {
+          "node": "exceptMembers",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptHubs",
+          "port": "collection"
+        }
+      },
+      "e_excl_hubs": {
+        "from": {
+          "node": "hopHubs",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptHubs",
+          "port": "exclude"
+        }
+      },
+      "e_colHome_eq": {
+        "from": {
+          "node": "colHome",
+          "port": "value"
+        },
+        "to": {
+          "node": "eqHome",
+          "port": "left"
+        }
+      },
+      "e_litHome_eq": {
+        "from": {
+          "node": "litHome",
+          "port": "value"
+        },
+        "to": {
+          "node": "eqHome",
+          "port": "right"
+        }
+      },
+      "e_in_filterHome": {
+        "from": {
+          "node": "corpus",
+          "port": "collection"
+        },
+        "to": {
+          "node": "filterHome",
+          "port": "collection"
+        }
+      },
+      "e_eqHome_filter": {
+        "from": {
+          "node": "eqHome",
+          "port": "value"
+        },
+        "to": {
+          "node": "filterHome",
+          "port": "predicate"
+        }
+      },
+      "e_keep_exceptHome": {
+        "from": {
+          "node": "exceptHubs",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptHome",
+          "port": "collection"
+        }
+      },
+      "e_excl_home": {
+        "from": {
+          "node": "filterHome",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptHome",
+          "port": "exclude"
+        }
+      },
+      "e_colArchive_eq": {
+        "from": {
+          "node": "colArchive",
+          "port": "value"
+        },
+        "to": {
+          "node": "eqArchive",
+          "port": "left"
+        }
+      },
+      "e_litArchive_eq": {
+        "from": {
+          "node": "litArchive",
+          "port": "value"
+        },
+        "to": {
+          "node": "eqArchive",
+          "port": "right"
+        }
+      },
+      "e_in_filterArchive": {
+        "from": {
+          "node": "corpus",
+          "port": "collection"
+        },
+        "to": {
+          "node": "filterArchive",
+          "port": "collection"
+        }
+      },
+      "e_eqArchive_filter": {
+        "from": {
+          "node": "eqArchive",
+          "port": "value"
+        },
+        "to": {
+          "node": "filterArchive",
+          "port": "predicate"
+        }
+      },
+      "e_keep_exceptArchive": {
+        "from": {
+          "node": "exceptHome",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptArchive",
+          "port": "collection"
+        }
+      },
+      "e_excl_archive": {
+        "from": {
+          "node": "filterArchive",
+          "port": "collection"
+        },
+        "to": {
+          "node": "exceptArchive",
+          "port": "exclude"
+        }
+      },
+      "e_sort": {
+        "from": {
+          "node": "exceptArchive",
+          "port": "collection"
+        },
+        "to": {
+          "node": "sort",
+          "port": "collection"
+        }
+      },
+      "e_project": {
+        "from": {
+          "node": "sort",
+          "port": "collection"
+        },
+        "to": {
+          "node": "project",
+          "port": "collection"
+        }
+      },
+      "e_out": {
+        "from": {
+          "node": "project",
+          "port": "collection"
+        },
+        "to": {
+          "node": "out",
+          "port": "value"
         }
       }
-    ],
-    "edges": [
-      {
-        "id": "e_in_corpus",
-        "source": "in",
-        "target": "corpus",
-        "sourceHandle": "value",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_in_hopMembers",
-        "source": "corpus",
-        "target": "hopMembers",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_in_hopHubs",
-        "source": "corpus",
-        "target": "hopHubs",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_in_exceptMembers",
-        "source": "corpus",
-        "target": "exceptMembers",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_excl_members",
-        "source": "hopMembers",
-        "target": "exceptMembers",
-        "sourceHandle": "collection",
-        "targetHandle": "exclude"
-      },
-      {
-        "id": "e_keep_exceptHubs",
-        "source": "exceptMembers",
-        "target": "exceptHubs",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_excl_hubs",
-        "source": "hopHubs",
-        "target": "exceptHubs",
-        "sourceHandle": "collection",
-        "targetHandle": "exclude"
-      },
-      {
-        "id": "e_colHome_eq",
-        "source": "colHome",
-        "target": "eqHome",
-        "sourceHandle": "value",
-        "targetHandle": "left"
-      },
-      {
-        "id": "e_litHome_eq",
-        "source": "litHome",
-        "target": "eqHome",
-        "sourceHandle": "value",
-        "targetHandle": "right"
-      },
-      {
-        "id": "e_in_filterHome",
-        "source": "corpus",
-        "target": "filterHome",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_eqHome_filter",
-        "source": "eqHome",
-        "target": "filterHome",
-        "sourceHandle": "value",
-        "targetHandle": "predicate"
-      },
-      {
-        "id": "e_keep_exceptHome",
-        "source": "exceptHubs",
-        "target": "exceptHome",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_excl_home",
-        "source": "filterHome",
-        "target": "exceptHome",
-        "sourceHandle": "collection",
-        "targetHandle": "exclude"
-      },
-      {
-        "id": "e_colArchive_eq",
-        "source": "colArchive",
-        "target": "eqArchive",
-        "sourceHandle": "value",
-        "targetHandle": "left"
-      },
-      {
-        "id": "e_litArchive_eq",
-        "source": "litArchive",
-        "target": "eqArchive",
-        "sourceHandle": "value",
-        "targetHandle": "right"
-      },
-      {
-        "id": "e_in_filterArchive",
-        "source": "corpus",
-        "target": "filterArchive",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_eqArchive_filter",
-        "source": "eqArchive",
-        "target": "filterArchive",
-        "sourceHandle": "value",
-        "targetHandle": "predicate"
-      },
-      {
-        "id": "e_keep_exceptArchive",
-        "source": "exceptHome",
-        "target": "exceptArchive",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_excl_archive",
-        "source": "filterArchive",
-        "target": "exceptArchive",
-        "sourceHandle": "collection",
-        "targetHandle": "exclude"
-      },
-      {
-        "id": "e_sort",
-        "source": "exceptArchive",
-        "target": "sort",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_project",
-        "source": "sort",
-        "target": "project",
-        "sourceHandle": "collection",
-        "targetHandle": "collection"
-      },
-      {
-        "id": "e_out",
-        "source": "project",
-        "target": "out",
-        "sourceHandle": "collection",
-        "targetHandle": "value"
-      }
-    ]
+    }
+  },
+  "layout": {
+    "in": {
+      "x": 0,
+      "y": 200
+    },
+    "corpus": {
+      "x": 180,
+      "y": 200
+    },
+    "hopMembers": {
+      "x": 220,
+      "y": 0
+    },
+    "hopHubs": {
+      "x": 220,
+      "y": 120
+    },
+    "exceptMembers": {
+      "x": 480,
+      "y": 200
+    },
+    "exceptHubs": {
+      "x": 700,
+      "y": 200
+    },
+    "colHome": {
+      "x": 220,
+      "y": 280
+    },
+    "litHome": {
+      "x": 220,
+      "y": 360
+    },
+    "eqHome": {
+      "x": 440,
+      "y": 320
+    },
+    "filterHome": {
+      "x": 660,
+      "y": 320
+    },
+    "exceptHome": {
+      "x": 920,
+      "y": 200
+    },
+    "colArchive": {
+      "x": 220,
+      "y": 440
+    },
+    "litArchive": {
+      "x": 220,
+      "y": 520
+    },
+    "eqArchive": {
+      "x": 440,
+      "y": 480
+    },
+    "filterArchive": {
+      "x": 660,
+      "y": 480
+    },
+    "exceptArchive": {
+      "x": 1140,
+      "y": 200
+    },
+    "sort": {
+      "x": 1360,
+      "y": 200
+    },
+    "project": {
+      "x": 1580,
+      "y": 200
+    },
+    "out": {
+      "x": 1800,
+      "y": 200
+    }
   }
 }
 ```
