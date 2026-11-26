@@ -7,20 +7,20 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
 {
   "version": 1,
   "graph": {
-    "nodes": {
-      "in": {
+    "nodes": [
+      {
         "id": "in",
         "type": "input",
         "inputs": {}
       },
-      "corpus": {
+      {
         "id": "corpus",
         "type": "corpus",
         "inputs": {
           "id": "page"
         }
       },
-      "hopMembers": {
+      {
         "id": "hopMembers",
         "type": "traverse",
         "inputs": {
@@ -28,7 +28,7 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "direction": 0
         }
       },
-      "hopHubs": {
+      {
         "id": "hopHubs",
         "type": "traverse",
         "inputs": {
@@ -36,75 +36,75 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "direction": 1
         }
       },
-      "exceptMembers": {
+      {
         "id": "exceptMembers",
         "type": "except",
         "inputs": {}
       },
-      "exceptHubs": {
+      {
         "id": "exceptHubs",
         "type": "except",
         "inputs": {}
       },
-      "colHome": {
+      {
         "id": "colHome",
         "type": "column",
         "inputs": {
           "name": "id"
         }
       },
-      "litHome": {
+      {
         "id": "litHome",
         "type": "literal",
         "inputs": {
           "value": "01KZXT3MRP5GXYXCSRHKF302BG"
         }
       },
-      "eqHome": {
+      {
         "id": "eqHome",
         "type": "equals",
         "inputs": {}
       },
-      "filterHome": {
+      {
         "id": "filterHome",
         "type": "filter",
         "inputs": {}
       },
-      "exceptHome": {
+      {
         "id": "exceptHome",
         "type": "except",
         "inputs": {}
       },
-      "colArchive": {
+      {
         "id": "colArchive",
         "type": "column",
         "inputs": {
           "name": "id"
         }
       },
-      "litArchive": {
+      {
         "id": "litArchive",
         "type": "literal",
         "inputs": {
           "value": "01KZXT3MS0JYENYDDZXWHGDAEJ"
         }
       },
-      "eqArchive": {
+      {
         "id": "eqArchive",
         "type": "equals",
         "inputs": {}
       },
-      "filterArchive": {
+      {
         "id": "filterArchive",
         "type": "filter",
         "inputs": {}
       },
-      "exceptArchive": {
+      {
         "id": "exceptArchive",
         "type": "except",
         "inputs": {}
       },
-      "sort": {
+      {
         "id": "sort",
         "type": "sort",
         "inputs": {
@@ -112,21 +112,22 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "direction": "asc"
         }
       },
-      "project": {
+      {
         "id": "project",
         "type": "project",
         "inputs": {
           "columns": "id"
         }
       },
-      "out": {
+      {
         "id": "out",
         "type": "output",
         "inputs": {}
       }
-    },
-    "edges": {
-      "e_in_corpus": {
+    ],
+    "edges": [
+      {
+        "id": "e_in_corpus",
         "from": {
           "node": "in",
           "port": "value"
@@ -136,7 +137,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_in_hopMembers": {
+      {
+        "id": "e_in_hopMembers",
         "from": {
           "node": "corpus",
           "port": "collection"
@@ -146,7 +148,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_in_hopHubs": {
+      {
+        "id": "e_in_hopHubs",
         "from": {
           "node": "corpus",
           "port": "collection"
@@ -156,7 +159,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_in_exceptMembers": {
+      {
+        "id": "e_in_exceptMembers",
         "from": {
           "node": "corpus",
           "port": "collection"
@@ -166,7 +170,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_excl_members": {
+      {
+        "id": "e_excl_members",
         "from": {
           "node": "hopMembers",
           "port": "collection"
@@ -176,7 +181,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "exclude"
         }
       },
-      "e_keep_exceptHubs": {
+      {
+        "id": "e_keep_exceptHubs",
         "from": {
           "node": "exceptMembers",
           "port": "collection"
@@ -186,7 +192,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_excl_hubs": {
+      {
+        "id": "e_excl_hubs",
         "from": {
           "node": "hopHubs",
           "port": "collection"
@@ -196,7 +203,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "exclude"
         }
       },
-      "e_colHome_eq": {
+      {
+        "id": "e_colHome_eq",
         "from": {
           "node": "colHome",
           "port": "value"
@@ -206,7 +214,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "left"
         }
       },
-      "e_litHome_eq": {
+      {
+        "id": "e_litHome_eq",
         "from": {
           "node": "litHome",
           "port": "value"
@@ -216,7 +225,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "right"
         }
       },
-      "e_in_filterHome": {
+      {
+        "id": "e_in_filterHome",
         "from": {
           "node": "corpus",
           "port": "collection"
@@ -226,7 +236,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_eqHome_filter": {
+      {
+        "id": "e_eqHome_filter",
         "from": {
           "node": "eqHome",
           "port": "value"
@@ -236,7 +247,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "predicate"
         }
       },
-      "e_keep_exceptHome": {
+      {
+        "id": "e_keep_exceptHome",
         "from": {
           "node": "exceptHubs",
           "port": "collection"
@@ -246,7 +258,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_excl_home": {
+      {
+        "id": "e_excl_home",
         "from": {
           "node": "filterHome",
           "port": "collection"
@@ -256,7 +269,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "exclude"
         }
       },
-      "e_colArchive_eq": {
+      {
+        "id": "e_colArchive_eq",
         "from": {
           "node": "colArchive",
           "port": "value"
@@ -266,7 +280,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "left"
         }
       },
-      "e_litArchive_eq": {
+      {
+        "id": "e_litArchive_eq",
         "from": {
           "node": "litArchive",
           "port": "value"
@@ -276,7 +291,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "right"
         }
       },
-      "e_in_filterArchive": {
+      {
+        "id": "e_in_filterArchive",
         "from": {
           "node": "corpus",
           "port": "collection"
@@ -286,7 +302,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_eqArchive_filter": {
+      {
+        "id": "e_eqArchive_filter",
         "from": {
           "node": "eqArchive",
           "port": "value"
@@ -296,7 +313,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "predicate"
         }
       },
-      "e_keep_exceptArchive": {
+      {
+        "id": "e_keep_exceptArchive",
         "from": {
           "node": "exceptHome",
           "port": "collection"
@@ -306,7 +324,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_excl_archive": {
+      {
+        "id": "e_excl_archive",
         "from": {
           "node": "filterArchive",
           "port": "collection"
@@ -316,7 +335,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "exclude"
         }
       },
-      "e_sort": {
+      {
+        "id": "e_sort",
         "from": {
           "node": "exceptArchive",
           "port": "collection"
@@ -326,7 +346,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_project": {
+      {
+        "id": "e_project",
         "from": {
           "node": "sort",
           "port": "collection"
@@ -336,7 +357,8 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "collection"
         }
       },
-      "e_out": {
+      {
+        "id": "e_out",
         "from": {
           "node": "project",
           "port": "collection"
@@ -346,7 +368,7 @@ Translucence is a collection of interconnected Bible articles. A core goal is to
           "port": "value"
         }
       }
-    }
+    ]
   },
   "layout": {
     "in": {
